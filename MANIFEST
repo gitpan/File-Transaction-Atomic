@@ -1,0 +1,12 @@
+MANIFEST
+Changes
+Makefile.PL
+README
+Atomic.pm
+t/ft_test_util.pl
+t/10ft.t
+t/20taint.t
+t/30oldfiles.t
+t/40name_encode.t
+t/50atomic.t
+t/60cleanup.t
