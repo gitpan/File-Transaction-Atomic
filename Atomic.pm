@@ -2,8 +2,8 @@ package File::Transaction::Atomic;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.02';
-# $Rev: 21 $
+$VERSION = '0.03';
+# $Rev: 37 $
 
 use Cwd 'abs_path';
 use DirHandle;
