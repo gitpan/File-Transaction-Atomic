@@ -83,8 +83,8 @@ SECURITY CONCERNS
     since that would allow any local user to set up a fake /tmp/ftawork and
     subvert the commit().
 
-    The default WORKDIR of <.ftawork> is only safe if no untrusted person
-    can control the creation of files in your current working directory.
+    The default WORKDIR of .ftawork is only safe if no untrusted person can
+    control the creation of files in your current working directory.
 
 HOW IT WORKS
     The atomic commit works by first replacing each live file with a symlink

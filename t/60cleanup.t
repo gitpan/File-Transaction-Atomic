@@ -1,4 +1,4 @@
-#!perl -wT
+#!perl -wT -I. -Iblib/lib
 use strict;
 require 't/ft_test_util.pl';
 

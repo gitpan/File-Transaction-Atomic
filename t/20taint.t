@@ -1,4 +1,4 @@
-#!perl -wT
+#!perl -wT -I. -Iblib/lib
 use strict;
 require 't/ft_test_util.pl';
 
@@ -28,7 +28,7 @@ symlink 'new', 't/.work/live'        or die "symlink: $!";
 symlink 'x',   't/.work/live/t-sfoo' or die "symlink: $!";
 $ft = File::Transaction::Atomic->new;
 eval { $ft->commit("t/.work$taint") };
-like( $@, '/Insecure dependency in unlink.*line 376\./',
+like( $@, '/Insecure dependency in unlink.*line 377\./',
           "tainted existing WORKDIR is fatal before doing anything" );
 deldir('t/.work/new');
 deldir('t/.work');

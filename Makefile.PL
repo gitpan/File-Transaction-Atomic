@@ -6,8 +6,6 @@ WriteMakefile(
     'PREREQ_PM'    => {
                         'Test::More'        => 0,
                         'IO::File'          => 0,
-                        'DirHandle'         => 0,
-                        'Cwd'               => 0,
                         'File::Transaction' => 0,
                       },
 );

@@ -1,3 +1,7 @@
 
 0.01  19 Sep 2002  Initial release.
 
+0.02               Removed dependence on core modules Cwd and DirHandle.
+                   Fixed POD typo.
+                   More resilient #! lines for taint mode tests.
+

@@ -2,7 +2,8 @@ package File::Transaction::Atomic;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
+# $Rev: 21 $
 
 use Cwd 'abs_path';
 use DirHandle;
@@ -169,7 +170,7 @@ bad idea to do something like:
 since that would allow any local user to set up a fake
 F</tmp/ftawork> and subvert the commit().
 
-The default WORKDIR of <.ftawork> is only safe if no untrusted
+The default WORKDIR of F<.ftawork> is only safe if no untrusted
 person can control the creation of files in your current working
 directory.
 
